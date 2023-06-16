@@ -10,12 +10,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300&family=Lato:ital,wght@0,300;0,400;0,700;1,100;1,300;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="user-login">
     <div class="user-container">
        <form class="form-username">
-        <h2>Join Chatroom</h2>
-        <p>Username</p>
-        <input type="text" id="username-input" placeholder="Username" />
+        <h3>Welcome Back
+            <span class="userlogin-text">User Login</span>
+        </h3>
+        
+        <label>Username</label>
+        <input type="text" class="user-input" id="username-input" placeholder="For ex.Prajwalwani" />
+        <!-- <label>Password</label>
+        <input type="password" class="user-input" placeholder="6 characters compulsory"> -->
         <button id="join-btn" type="submit">Join Chat</button>
+    
     </form>
     <div class="chatroom-container">
         <div class="chatroom-header">Chatroom</div>
@@ -31,6 +38,7 @@
         </div>
     </div>
     </div>
+</div>
     <script src="./script.js"></script>
 </body>
 </html>

@@ -3,110 +3,84 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family: 'Alegreya Sans SC', sans-serif;
-    font-family: 'Lato', sans-serif;
-    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+.user-login{
+    display: none;
     height: 100vh;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url('https://res.cloudinary.com/diklvaj2n/image/upload/v1686658737/2080500_g2ouge.png');
+    background-size: cover;
+    background-position: center;
 }
-svg{
-    position: relative;
-    top: 370px;
-}
-.user-container{
-    width: 350px;
-    height: 500px;
-    z-index: 100;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    color: white;
-    /* transform: translate(160% , 32%); */
-}
-.form-username > h2{
-    text-align: center;
-    padding: 8px;
-}
-.form-username > p{
-    font-size: 20px;
-    padding: 8px;
-    margin-top: 20px;
-   
-}
-.form-username > input{
-    background-color: transparent;
+form {
+    background-color: rgba(255, 255, 255, 0.07);
+    margin: 0 auto;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
     outline: none;
-    border: 1px solid rgb(255, 255, 255);
-    width: 280px;
-    height: 30px;
-    border-radius: 5px;
-    color: rgb(255, 255, 255);
-    margin-top: 5px;
-    margin-left: 8px;
-    padding-left: 5px;
-    cursor: pointer;
-    
-}
-.form-username > input::placeholder{
-    color: rgb(105, 104, 104)
-}
-.form-username > button{
-    display: block;
-    margin: 15px 8px;
-    background-color: transparent;
-    border:1px solid rgb(255, 255, 255);
-    border-radius: 5px;
-    color: rgb(24, 23, 23);
-    padding: 3px;
-    cursor: pointer;
-}
-.chatroom-header{
-    text-align: center;
-    padding: 8px;
-    font-size: 20px;
-}
-.messages{
+    border: none;
+    max-width: 350px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    height: 410px;
-    margin-top: 10px;
+    margin: 0 15px;
+}
+h3 {
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 42px;
+    margin: 0;
+}
+.userlogin-text {
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    color: #e5e5e5;
+}
+.form-username >  label {
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.form-username >  input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    outline: none;
+    border: none;
+    color: #fff;
+    box-sizing: border-box;
+}
+.form-username >  input::placeholder {
+    color: #e5e5e5;
+}
+.form-username > button {
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #800aef;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
 }
 
-.message {
-    background-image:linear-gradient(18deg ,rgb(102, 178, 239) , rgb(239, 136, 217));
-    width: fit-content;
-    padding: 7px 10px;
-    margin: 5px;
-    border-radius: 15px;
-}
-.sent{
-    align-self: flex-end;
-}
-.type-box{ 
-    margin-left:5px ;
-    
-}
-.type-box > input{
-    width: 280px;
-    border: 1px solid white;
-    height: 30px;
-    border-radius: 10px;
-    padding: 5px;
-    outline: none;
-    cursor: pointer;
-}
-.type-box > button{
-    width: 50px;
-    border-radius: 10px;
-    height: 30px;
-    border: 1px solid white;
-    outline: none;
-    cursor: pointer;
+.chatroom-container{
+    display: block;
 }
