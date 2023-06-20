@@ -1,4 +1,5 @@
 
+const socket = io();
 let username = "";
 
 document.getElementById('join-btn').addEventListener('click' , (event)=>{
