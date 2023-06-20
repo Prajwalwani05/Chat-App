@@ -13,6 +13,7 @@
     background-size: cover;
     background-position: center;
 }
+
 form {
     background-color: rgba(255, 255, 255, 0.07);
     margin: 0 auto;
@@ -82,5 +83,65 @@ h3 {
 }
 
 .chatroom-container{
-    display: block;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.07);
+    margin: 0 auto;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 10px 10px;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+.messages{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 50vh;
+    font-size: 13px;
+}
+.chatroom-header{
+    text-align: center;
+    padding-bottom:2px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    border-bottom: 1px solid white;
+    letter-spacing: 2px;
+}
+.messages::-webkit-scrollbar{
+    width: 5px;  
+}
+.recieved{
+    width: fit-content;
+    background-color: #361155ef;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 0px 10px;
+}
+.sent{
+    align-self: flex-end;
+    background-color: #361155ef;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 10px 0px;
+}
+.type-box > input{
+    width: 240px;
+    height: 30px;
+    outline: none;
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 8px;
+}
+.type-box > button{
+    height: 30px;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
 }
